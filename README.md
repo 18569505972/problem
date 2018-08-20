@@ -75,6 +75,7 @@ ie6识别为300px,ie7识别为200px，其他是识别为100px。
 	opacity:0.5;
 	filter:alpha(opacity=0.5);
 }
+```
 ### IE6无法设置1px高度：设置overflow：hidden或line-height：1px  
 ### form标签IE会有margin  
 ### transform  
