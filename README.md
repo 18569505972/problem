@@ -77,3 +77,5 @@ ie6识别为300px,ie7识别为200px，其他是识别为100px。
 }
 ### IE6无法设置1px高度：设置overflow：hidden或line-height：1px  
 ### form标签IE会有margin  
+### transform  
+translate部分手机浏览器需要启用3d加速，否则会白屏渲染不出效果。  
