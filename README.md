@@ -4,6 +4,7 @@
 ### andriod对邮箱的识别：meta email=no  
 ### flex：-webkit-box  
 ### ios fixed定位元素抖动：-webkit-overflow-scroll:touch  
+### ios fixed定位到底部时，输入法键盘会盖住fixed元素，建议采用absolute
 ### 多行省略：
 ```javascript
 .overflow-hidden{
@@ -16,7 +17,7 @@ text-overflow: ellipsis;
 /*text-align:justify;不能和溢出隐藏的代码一起写，会有bug*/
 }
 ```
-### ios fixed输入框focus吊起输入法：
+### 安卓输入框focus吊起输入法（Safari不支持）：
 ```javascript
 window.addEventListener('resize', function() {
     if(document.activeElement.tagName === 'INPUT' || document.activeElement.tagName === 'TEXTAREA') {
@@ -79,4 +80,6 @@ ie6识别为300px,ie7识别为200px，其他是识别为100px。
 ### IE6无法设置1px高度：设置overflow：hidden或line-height：1px  
 ### form标签IE会有margin  
 ### transform  
-translate部分手机浏览器需要启用3d加速，否则会白屏渲染不出效果。  
+translate部分手机浏览器需要启用3d加速，否则会卡顿或者白屏渲染不出效果。  
+IOS中tansform动画会出现z-index层级覆盖问题，父元素添加overflow：hidden。  
+### line-height居中方式在某些手机会错位，建议采用absolute+transform的方式  
