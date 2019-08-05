@@ -82,4 +82,6 @@ ie6识别为300px,ie7识别为200px，其他是识别为100px。
 ### transform  
 translate部分手机浏览器需要启用3d加速，否则会卡顿或者白屏渲染不出效果。  
 IOS中tansform动画会出现z-index层级覆盖问题，父元素添加overflow：hidden。  
+### animation
+iPhone5 不支持animation to字段换位百分比来指示动画步骤。  
 ### line-height居中方式在某些手机会错位，建议采用absolute+transform的方式  
